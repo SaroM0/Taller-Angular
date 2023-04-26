@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+      <div class = "col-12 offset-md-0">
+          <table class="table">
+              <thead class="thead-light">
+                  <tr>
+                      <th>#</th>
+                      <th>Name</th>
+                      <th>Channel</th>
+                      <th>Seasons</th>
+                  </tr>
+              </thead>
+              <tbody id="Series">
+                <tr *ngFor="let s of series">
+                  <td>
+                    <dd>{{s.id}}</dd>
+                  </td>
+                  <td>
+                    <dd>{{s.name}}</dd>
+                  </td>
+                  <td>
+                    <dd>{{s.channel}}</dd>
+                  </td>
+                  <td>
+                    <dd>{{s.seasons}}</dd>
+                  </td>
+                </tr>
+              </tbody>
+          </table>
+          <div style="padding-left: 15px;"><p>Seasons average: {{avgSeasons}}</p></div>
+      </div>
+  </div>
+</div>
